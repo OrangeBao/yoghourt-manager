@@ -6,12 +6,12 @@
   ],
   "plugins": [
     "transform-decorators-legacy",
-    "transform-class-properties",
-    ["import", [
-      {
-        "libraryName": "antd",
-        "libraryDirectory": "lib",
-        "style": true
-      }]]
+//    "transform-class-properties",
+//    ["import", [
+//      {
+//        "libraryName": "antd",
+//        "libraryDirectory": "lib",
+//        "style": true
+//      }]]
     ]
 }
