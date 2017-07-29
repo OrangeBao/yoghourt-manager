@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da5561d-b513-4d71-9c36-02f243d036a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/home/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/login/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/login/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/order/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/order/order.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/production/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/production/production.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/framework/fetch/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/framework/utils/DateUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/framework/utils/SessionUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/index.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/library.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/style/index.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.html" afterPath="$PROJECT_DIR$/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/framework/fetch/index.js" afterPath="$PROJECT_DIR$/src/framework/fetch/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,7 +19,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -48,17 +29,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -66,6 +47,26 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/framework/fetch/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,16 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-403">
-              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -167,14 +158,12 @@
         <option value="$PROJECT_DIR$/src/style.css" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/library.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/template.html" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/style/index.css" />
         <option value="$PROJECT_DIR$/src/style/index.less" />
         <option value="$PROJECT_DIR$/src/framework/fetch/fetch.js" />
-        <option value="$PROJECT_DIR$/src/framework/fetch/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/biz/production/production.less.css" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
@@ -189,6 +178,8 @@
         <option value="$PROJECT_DIR$/src/framework/utils/SessionUtil.js" />
         <option value="$PROJECT_DIR$/src/biz/login/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/framework/fetch/index.js" />
       </list>
     </option>
   </component>
@@ -267,10 +258,6 @@
               <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -289,22 +276,8 @@
               <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biz" />
+              <option name="myItemId" value="fetch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,32 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,12 +434,20 @@
       <workItem from="1500366053664" duration="7188000" />
       <workItem from="1500630328448" duration="314000" />
       <workItem from="1500888275549" duration="46000" />
-      <workItem from="1501206839685" duration="28282000" />
+      <workItem from="1501206839685" duration="28688000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add biz">
+      <created>1501302948955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501302948955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35830000" />
+    <option name="totallyTimeSpent" value="36236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -521,6 +476,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add biz" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add biz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,14 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -696,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/framework/fetch/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/biz/production/production.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -725,7 +668,7 @@
         <state relative-caret-position="321">
           <caret line="173" column="41" lean-forward="true" selection-start-line="173" selection-start-column="15" selection-end-line="173" selection-end-column="41" />
           <folding>
-            <element signature="e#45#71#0" expanded="true" />
+            <element signature="e#45#71#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,22 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -829,6 +756,38 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/framework/fetch/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

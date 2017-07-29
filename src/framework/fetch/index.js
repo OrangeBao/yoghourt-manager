@@ -1,4 +1,5 @@
-const host = "http://localhost:3000";
+// const host = "http://localhost:3000";
+const host = '';
 export default (url, param) => {
   return fetch( host + url, {
     method: 'POST',
