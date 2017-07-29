@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ['whatwg-fetch', "./src/index.js"],
   plugins: [
     // new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
@@ -19,16 +19,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
 
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: '/',
+    allowedHosts: [
+      'localhost:9000',
+    ]
   },
 
   externals: {
     'react': 'React',
-    'react-dom': 'ReactDOM'
+    'react-dom': 'ReactDOM',
+    'react-router-dom': 'ReactRouterDOM'
   },
 
   module: {
@@ -37,19 +41,27 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
+          loader: 'babel-loader'
         }
       },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //      'style-loader',
+      //      'css-loader'
+      //   ]
+      // },
       {
-        test: /\.css$/,
-        use: [
-           'style-loader',
-           'css-loader'
-        ]
-      }, {
+        test: /\.(less|css)$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "less-loader"
+        }]
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
