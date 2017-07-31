@@ -5,3 +5,4 @@ export { default as Order } from './order';
 export { default as Home } from './home';
 export { default as Production } from './production';
 export { default as Login } from './login';
+export { default as OrderDetail } from './orderDetail';
