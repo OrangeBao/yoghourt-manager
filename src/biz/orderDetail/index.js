@@ -27,6 +27,7 @@ class OrderDetail extends React.Component {
   };
 
   confirmOrder = () => {
+    const { location } = this.props;
     PFetch('/changeOrderState', {orderId: location.state.orderId, statue: 2}).then(data => {
       // const { dataSource } = this.state;
       // const newD = dataSource && dataSource.map(r => {
