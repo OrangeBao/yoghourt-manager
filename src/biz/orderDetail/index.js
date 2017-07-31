@@ -26,8 +26,8 @@ class OrderDetail extends React.Component {
     // message.error('Click on No');
   };
 
-  confirmOrder = record => {
-    PFetch('/changeOrderState', {orderId: record.orderId, statue: 2}).then(data => {
+  confirmOrder = () => {
+    PFetch('/changeOrderState', {orderId: location.state.orderId, statue: 2}).then(data => {
       // const { dataSource } = this.state;
       // const newD = dataSource && dataSource.map(r => {
       //     if (r.orderId === record.orderId) {
