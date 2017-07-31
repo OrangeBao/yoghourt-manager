@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2da5561d-b513-4d71-9c36-02f243d036a6" name="Default" comment="">
+    <list default="true" id="2da5561d-b513-4d71-9c36-02f243d036a6" name="Default" comment="feat: add biz">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/biz/orderDetail/index.js" afterPath="$PROJECT_DIR$/src/biz/orderDetail/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -514,7 +514,7 @@
       <workItem from="1500630328448" duration="314000" />
       <workItem from="1500888275549" duration="46000" />
       <workItem from="1501206839685" duration="30590000" />
-      <workItem from="1501464347217" duration="11969000" />
+      <workItem from="1501464347217" duration="12090000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add biz">
       <created>1501302948955</created>
@@ -565,11 +565,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501479990193</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add biz">
+      <created>1501480561972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1501480561972</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50107000" />
+    <option name="totallyTimeSpent" value="50228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
