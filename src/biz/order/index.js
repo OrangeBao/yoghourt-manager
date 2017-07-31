@@ -16,13 +16,35 @@ class Order extends React.Component {
 
   state = {
     dataSource: [],
-    visible: false
+    visible: false,
+    loading: true,
+    pagination: {
+      pageSize: 10,
+      current: 1,
+      defaultCurrent: 0,
+      total:0
+    }
+  };
+
+  pageChange = (pagination, filters, sorter) => {
+    const { current } = pagination;
+    this.setState({pagination: pagination}, () => {
+      this.updateDataSource(current - 1)
+    });
   };
 
   updateDataSource = () => {
-    PFetch('/getAllOrdersByTime').then(data => {
-      this.setState({
-        dataSource: data
+    this.setState({loading: true}, () => {
+      PFetch('/getAllOrdersByTimeAndPage', {currentPage: this.state.pagination.current - 1, pageSize: this.state.pagination.pageSize}).then(data => {
+        const pagination = {
+          ...this.state.pagination,
+          total: data.count
+        };
+        this.setState({
+          dataSource: data.data,
+          loading: false,
+          pagination
+        });
       });
     });
   };
@@ -31,12 +53,54 @@ class Order extends React.Component {
     this.updateDataSource();
   }
 
+  cancelDelete = () => {
+    // message.error('Click on No');
+  };
+
+  confirmOrder = record => {
+    PFetch('/changeOrderState', {orderId: record.orderId, statue: 2}).then(data => {
+      const { dataSource } = this.state;
+      const newD = dataSource && dataSource.map(r => {
+        if (r.orderId === record.orderId) {
+          return {
+            ...record, statue: 2
+          }
+        }
+        return r;
+      });
+      this.setState({dataSource: newD});
+      message.success('订单确认成功！');
+    }).catch(e => {
+      message.error('订单确认失败！');
+      console.log(e);
+    })
+  };
+
+  confirmReturn = record => {
+    PFetch('/changeOrderState', {orderId: record.orderId, statue: 1}).then(data => {
+      const { dataSource } = this.state;
+      const newD = dataSource && dataSource.map(r => {
+          if (r.orderId === record.orderId) {
+            return {
+              ...record, statue: 1
+            }
+          }
+          return r;
+        });
+      this.setState({dataSource: newD});
+      message.success('订单退回成功！');
+    }).catch(e => {
+      message.error('订单退回失败！');
+      console.log(e);
+    })
+  };
+
   render() {
-    const { dataSource } = this.state;
+    const { dataSource, loading, pagination } = this.state;
     const { getFieldDecorator } = this.props.form;
     return (
       <div className="order-wrapper">
-        <Table dataSource={dataSource}>
+        <Table dataSource={dataSource} loading={loading} pagination={pagination} onChange={this.pageChange}>
           <Column
             title="订单编号"
             dataIndex="orderId"
@@ -91,13 +155,13 @@ class Order extends React.Component {
             key="action"
             render={(text, record) => (
               <span>
-                <Popconfirm title="确定删除该产品？" onConfirm={() => this.confirmDelete(record)} onCancel={this.cancelDelete} okText="确定" cancelText="取消">
-                  <a href="#">确认</a>
+                <Popconfirm title="确定接受该产品？" onConfirm={() => this.confirmOrder(record)} onCancel={this.cancelDelete} okText="确定" cancelText="取消">
+                  <a href="#">接受</a>
                 </Popconfirm>
                 <span className="ant-divider" />
-                <a href="#" className="ant-dropdown-link" onClick={() => this.modifyProduction(record)}>
-                  退回
-                </a>
+                <Popconfirm title="确定退回该产品？" onConfirm={() => this.confirmReturn(record)} onCancel={this.cancelDelete} okText="确定" cancelText="取消">
+                  <a href="#">退回</a>
+                </Popconfirm>
               </span>
             )}
           />

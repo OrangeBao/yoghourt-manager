@@ -13,7 +13,21 @@ class Production extends React.Component {
 
   state = {
     dataSource: [],
-    visible: false
+    visible: false,
+    loading: true,
+    pagination: {
+      pageSize: 10,
+      current: 1,
+      defaultCurrent: 0,
+      total:0
+    }
+  };
+
+  pageChange = (pagination, filters, sorter) => {
+    const { current } = pagination;
+    this.setState({pagination: pagination}, () => {
+      this.updateDataSource(current - 1)
+    });
   };
 
   confirmDelete = record => {
@@ -31,11 +45,17 @@ class Production extends React.Component {
   };
 
   updateDataSource = () => {
-    PFetch('/getAllProductions').then(data => {
+    this.setState({loading: true}, () => PFetch('/getAllProductionsByPage', {currentPage: this.state.pagination.current - 1, pageSize: this.state.pagination.pageSize}).then(data => {
+      const pagination = {
+        ...this.state.pagination,
+        total: data.count
+      };
       this.setState({
-        dataSource: data
+        dataSource: data.data,
+        loading: false,
+        pagination
       });
-    });
+    }));
   };
 
   componentDidMount() {
@@ -90,14 +110,14 @@ class Production extends React.Component {
   };
 
   render() {
-    const { dataSource } = this.state;
+    const { dataSource, loading, pagination } = this.state;
     const { getFieldDecorator } = this.props.form;
     return (
       <div className="production-wrapper">
         <div className="button-bar">
           <Button onClick={() => this.showModal()}>添加产品</Button>
         </div>
-        <Table dataSource={dataSource}>
+        <Table dataSource={dataSource} loading={loading} pagination={pagination} onChange={this.pageChange}>
           <Column
             title="产品编号"
             dataIndex="productionId"

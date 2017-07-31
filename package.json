@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open --history-api-fallback"
+    "start": "webpack-dev-server --open --history-api-fallback --define process.env.NODE_ENV=\"'develop'\""
   },
   "author": "yhbao",
   "license": "ISC",
